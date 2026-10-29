@@ -13,12 +13,12 @@ Interrupt Controller Register：
 <img width="643" height="874" alt="Interrupt Controller Register_Address_3" src="https://github.com/user-attachments/assets/351de809-2de6-4a17-b725-3494c1704ed8" />
 <img width="635" height="334" alt="Interrupt Controller Register_Address_4" src="https://github.com/user-attachments/assets/a78393a5-9b29-4429-a8fa-3f39a9ee1a82" />
 
-Pending Register： 
-PPI(Private Peripheral Interrupts) and SPI(Shared Peripheral Interrupts) Status：  
+Pending Register：  
+PPI(Private Peripheral Interrupts) and SPI(Shared Peripheral Interrupts) Status  
 <img width="670" height="690" alt="Pending Register (PPI   SPI)" src="https://github.com/user-attachments/assets/bd3713b1-6fde-4515-916e-5d59f4148ce9" />
 
 Mask Register：  
-e.g. I2C Controller：  
+e.g. I2C Controller  
 <img width="650" height="566" alt="Mask Register (e g  I2C Controller)" src="https://github.com/user-attachments/assets/106e30ea-31d1-426f-b62c-4f4b2b38976d" />
 
 # 2. 上板實作：  
@@ -26,7 +26,7 @@ e.g. I2C Controller：
 輸出：八顆LED  
 中斷來源與LED花樣對應：BTNU二進位計數、BTNC跑馬燈左移、BTND跑馬燈右移、BTNL全部閃爍、BTNR跑馬燈來回掃描  
 
-按鈕與AXI TIMER都接到concat送進SoC，PL Interrupt的Port ID由61編到66  
+按鈕與AXI TIMER都接到concat送進SoC，PL Interrupt的Port ID由61依序分到66  
 在xparameter.h可以看到Vivado幫忙分好的Port ID：  
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */  
 #define XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR 61U //BTNU  
