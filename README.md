@@ -26,7 +26,15 @@ e.g. I2C Controller：
 輸出：八顆LED  
 中斷來源與LED花樣對應：BTNU二進位計數、BTNC跑馬燈左移、BTND跑馬燈右移、BTNL全部閃爍、BTNR跑馬燈來回掃描  
 
-按鈕與AXI TIMER都接到concat送進SoC，PL Interrupt的Port ID由61編到66
+按鈕與AXI TIMER都接到concat送進SoC，PL Interrupt的Port ID由61編到66  
+在xparameter.h可以看到Vivado幫忙分好的Port ID：  
+/* Definitions for Fabric interrupts connected to ps7_scugic_0 */  
+#define XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR 61U //BTNU  
+#define XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR 62U //AXI TIMER  
+#define XPAR_FABRIC_AXI_GPIO_2_IP2INTC_IRPT_INTR 63U //BTNC  
+#define XPAR_FABRIC_AXI_GPIO_4_IP2INTC_IRPT_INTR 64U //BTND  
+#define XPAR_FABRIC_AXI_GPIO_3_IP2INTC_IRPT_INTR 65U //BTNL  
+#define XPAR_FABRIC_AXI_GPIO_5_IP2INTC_IRPT_INTR 66U //BTNR  
   
 Block Design Diagram：  
 <img width="1177" height="907" alt="Block Design Diagram" src="https://github.com/user-attachments/assets/4430a25e-677f-4fe3-8b3c-4528acc1ffbe" />
