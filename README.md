@@ -17,8 +17,8 @@ Pending Register：
 PPI(Private Peripheral Interrupts) and SPI(Shared Peripheral Interrupts) Status：  
 <img width="670" height="690" alt="Pending Register (PPI   SPI)" src="https://github.com/user-attachments/assets/bd3713b1-6fde-4515-916e-5d59f4148ce9" />
 
-Mask Register：
-e.g. I2C Controller：
+Mask Register：  
+e.g. I2C Controller：  
 <img width="650" height="566" alt="Mask Register (e g  I2C Controller)" src="https://github.com/user-attachments/assets/106e30ea-31d1-426f-b62c-4f4b2b38976d" />
 
 2. 上板實作：
