@@ -20,8 +20,7 @@
 #define BTN_PRESSED_LEVEL   1       //按鈕按下時讀到的電位
 
 #define NUM_BTN             5
-//#define TIMER_RESET_VALUE   0xFF676980U //PL時脈50MHz時約0.2秒
-#define TIMER_RESET_VALUE   0xFECED300U //PL時脈100MHz時約0.2秒
+#define TIMER_RESET_VALUE   0xFF676980U //PL時脈50MHz時約0.2秒
 
 #define LED_ID              XPAR_AXI_GPIO_0_DEVICE_ID
 #define GIC_ID              XPAR_SCUGIC_SINGLE_DEVICE_ID
