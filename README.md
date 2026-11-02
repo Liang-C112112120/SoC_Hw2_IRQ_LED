@@ -22,7 +22,7 @@ e.g. I2C Controller
 <img width="650" height="566" alt="Mask Register (e g  I2C Controller)" src="https://github.com/user-attachments/assets/106e30ea-31d1-426f-b62c-4f4b2b38976d" />
 
 # 2. 上板實作：  
-Demo影片：https://drive.google.com/file/d/1CBN1l_y8FBUju-uMjN7JCxCs0b8M8z4L/view?usp=sharing  
+Demo影片：https://drive.google.com/file/d/1dGWucAJCdH49i7RmlI988M86nHPoXuw_/view?usp=sharing  
   
 輸入：五顆按鈕（BTNU、BTNC、BTND、BTNL、BTNR），對應不同的中斷輸入源與LED花樣、內建的AXI TIMER，總共六個中斷來源  
 輸出：八顆LED（LED0 ~ LED7）  
