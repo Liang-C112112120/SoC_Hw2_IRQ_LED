@@ -38,6 +38,10 @@ Block Design Diagram：
 ### 2. 增加按鈕防彈跳的RTL IP Block (button_debouncer)
 Block Design Diagram：  
 <img width="1170" height="941" alt="Block Design Diagram 按鈕防彈跳" src="https://github.com/user-attachments/assets/912984cf-3c0f-458a-b1c8-c0e98708dd37" />
+
+### 3. 將按鈕防彈跳的RTL IP Block製成具有AXI介面的IP Block
+Block Design Diagram：  
+<img width="1566" height="769" alt="Block Design Diagram 按鈕防彈跳 AXI IP" src="https://github.com/user-attachments/assets/c3b664c5-2428-4915-b4ab-262987de8496" />
   
 防彈跳原理：  
 使用兩級D型正反器將非同步輸入的按鈕訊號做同步化，接著透過for迴圈對五個按鈕通道分別進行防彈跳處理。  
